@@ -1,0 +1,211 @@
+/* body {
+    background-color: #343434;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+   } */
+   
+   div.items {
+    white-space: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+   }
+   div.items:hover .item {
+    opacity: 0.3;
+   }
+   div.items:hover .item:hover {
+    opacity: 1;
+   }
+   div.control-container{
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+   }
+   div.container1{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+   }
+   div.left-scroll {
+    left: 0;
+   }
+   div.left-scroll i {
+    transform: translate(-60%, -50%);
+   }
+   div.right-scroll {
+    right: 0;
+   }
+   div.right-scroll i {
+    transform: translate(-40%, -50%);
+   }
+   div.scroll {
+    position: absolute;
+    display: inline-block;
+    color: #f6f6f6;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f6f6f6;
+    border-radius: 60px;
+    margin: 0 5px;
+    z-index: 951;
+   }
+   div.scroll i {
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+   }
+   
+   .item{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+    align-self: center;
+    width: 300px;
+    height: 350px;
+    margin: 60px 3px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 899;
+    /* border-radius: 20px; */
+   }
+
+   .item:hover {
+    transform: scale(1.2);
+    margin: 10px;
+    opacity: 1;
+    z-index: 950;
+
+   
+   }
+   .item:hover .opacity-none {
+    opacity: 1;
+   }
+
+   
+   .item .opacity-none {
+    opacity: 0;
+   }
+   /* .item img.item-image {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover; *
+   }*/
+   .item .item-title {
+    color: #f6f6f6;
+    position: absolute;
+    margin: 5px 0;
+    padding: 10px 0;
+    width: 100%;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, 0);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+   }
+   /* .item .item-description {
+    color: #f6f6f6;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: pre-wrap;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+    padding: 10px 0;
+   } */
+   
+   #item-title1{
+    background: url(../img/beach-2836300_1280.jpg) no-repeat center center/cover;
+
+    height: 400px;
+   }
+   #item-title2{
+    background: url(../img/manali-2035750_1280.jpg) no-repeat center center/cover;
+    height: 400px;
+   }
+   #item-title3{
+    background: url(../img/mussoorie-7243347_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+   }
+   #item-title4{
+    background: url(../img/satyajit-bhowmik-bbvG6f8V1Zc-unsplash.jpg)no-repeat center center/cover;
+    height: 400px;
+   }
+   #item-title5{
+    background: url(../img/sunset-1139293_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+   }
+   #item-title6{
+    background: url(../img/taj-mahal-866692_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+   }
+
+   #item_title1{
+    background: url(../img/travel-5219496_1280.jpg)no-repeat center center/cover;
+    height: 400px;  
+  }
+  #item_title2{
+    background: url(../img/compass-2946959_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+  }
+  #item_title3{
+    background: url(../img/signage-2873882_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+  }
+  #item_title4{
+    background: url(../img/hotel-1749602_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+  }
+  #item_title5{
+    background: url(../img/restaurant-449952_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+  }
+  #item_title6{
+    background: url(../img/photographer-407068_1280.jpg)no-repeat center center/cover;
+    height: 400px;
+  }
+
+   .button {
+    position: absolute;
+    color: #f6f6f6;
+    font-size: 30px;
+    border: 1px solid #f6f6f6;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    z-index: 950;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+   }
+   .button i {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -55%);
+    z-index: 950;
+   }
+   .button:hover {
+    box-shadow: 0px 0px 50px #FFFFFF;
+   }

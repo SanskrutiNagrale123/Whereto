@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whereto.com</whereto?>
+    </title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="java/whereto.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/whereto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+        $(function () {
+        $("#datepicker").datepicker({ 
+              autoclose: true, 
+              todayHighlight: true
+        }).datepicker('update', new Date());
+      });
+</script>
+      
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="box1">
+            <a href="#">
+            <img src="img/IMG_20230806_110632.png" alt="">
+        </a>
+        </div>
+        <div class="box2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Planner</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="box3">
+            <a href="#" id="btn1">Log In</a>
+            <a href="#" id="btn2">Sign Up</a>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="container" id="item1">
+
+        </div>
+        <form action="backend.php">
+        <div class="container" id="item2" action = "backend.php">
+            <h3>Your Journey,Our Passion</h3>
+            <input type="text" id="where"  placeholder="Where to?" name="where">
+            
+            
+                <input id="datepicker"  type="text"  placeholder="When to?" name="when"/>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+            
+            
+            <input type="number" placeholder="travellers"  id="travellers" value="travellers">
+            <button type="submit" id="go" placeholder="Go" value="submit">Go</button>
+            <button id="maps" href="#" target="blank">Maps</button>
+        </div>
+    </form>
+        
+        <div class="container" id="item3">
+            <div class="Box1">
+                <h2>
+                    Welcome to WHERE TO?
+                </h2>
+                <img src="img/world-travel-5696_256.gif" alt="">
+                <p>
+                    Embark on a journey of wonderlust and discovery as we take you on a thrilling exploration of the country's most captivating destinations.
+                </p>
+            </div>
+            <div class="Box2">image</div>
+        </div>
+    </section>
+
+    <div class="planhead">
+        <h1>Handpicked destinations for you</h1>
+    </div>
+    <section class="planner">
+        
+        <a href="#"><div class="plan" id="plan1">Top 10 <br>Beaches</div></a>
+        <a href="#"><div class="plan" id="plan2">Top 10 <br>Hill-stations</div></a>
+        <a href="#"><div class="plan" id="plan3">North-India</div></a>
+        <a href="#"><div class="plan" id="plan4">North-East India</div></a>
+        <a href="#"><div class="plan" id="plan5">North-West India</div></a>
+        <a href="#"><div class="plan" id="plan6">South India</div></a>
+        
+        
+    </section>
+    <div class="planhead">
+        <h1>Plan your vacation</h1>
+    </div>
+    <section class="planner">
+        
+        <a href="#"><div class="plan" id="Plan1">Reach your destinations</div></a>
+        <a href="#"><div class="plan" id="Plan2">Maps</div></a>
+        <a href="#"><div class="plan" id="Plan3">Local transport</div></a>
+        <a href="#"><div class="plan" id="Plan4">Hotel-Stays</div></a>
+        <a href="#"><div class="plan" id="Plan5">Restaurants</div></a>
+        <a href="#"><div class="plan" id="Plan6">Tourist spots</div></a>
+        
+        
+    </section>
+    <section class="extra">
+        <div class="squaretext">
+            <img src="img/travel-5360_256.gif" alt="">
+            <ul>
+                <h1>Things you need to do</h1>
+                <p>planning, safety, affordability ensured !</p>
+
+            </ul>
+            
+        </div>
+        
+        <div class="SQUARE">
+            
+                <div class="square">
+                    <img src="img/Screenshot 2023-08-15 at 19-30-01 Figma.png" alt="">
+                    <h1>Sign Up</h1>
+                    <p>Completes all the work associated with planning and processing.</p>
+    
+                </div>
+                <div class="square">
+                    <img src="img/Screenshot 2023-08-15 at 19-36-11 Figma.png" alt="">
+                    <h1>Worth of money</h1>
+                    <p>After successful access then book from exclusive deals and pricing.</p>
+                </div>
+            
+                <div class="square">
+                    <img src="img/Screenshot 2023-08-15 at 19-30-23 Figma.png" alt="">
+                    <h1>Exciting Travel</h1>
+                    <p>Start and explore a wide range of exciting travel experience.</p>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="extra1">
+        <h1>Craft your journey in mere seconds!</h1>
+        <p>Where travel dream takes a flight; be assured with us on a safe one</p>
+        <img src="img/ezgif.com-video-to-gif.gif" alt="">
+        
+    </section>
+
+    <section class="subscribe">
+        <div class="CONTAINER">
+            <div class="minicontainer">
+                <div class="minicontainer1">
+
+                    <h1>Subscribe and get exclusive <br>deals and offers</h1>
+                    <img src="img/cartoon-477_256.gif" alt="">
+                </div>
+                <form action="backend.php">
+                <input type="email" placeholder="Enter your mail" alt="Email">
+                <button type="submit" alt="Email">subscribe</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="BOX1">
+            <a href="#" target="blank">
+
+                <img src="img/IMG_20230806_110632.png" alt="">
+            </a>
+            <h3>Where To?</h3>
+            <p>Book your ticket in minute , get full <br>control for much longer.</p>
+            <div class="sign">
+                <a href="https://www.facebook.com/" target="blank">
+                    <img src="img/facebook.svg" alt="">
+
+                </a>
+                <a href="https://www.instagram.com" target="blank">
+                    <img src="img/instagram.svg" alt="">
+
+                </a>
+                <a href="https://linkedin.com" target="blank">
+                    <img src="img/linkedin.svg" alt="">
+
+                </a>
+            </div>
+            <p>tel : (+91)xxxxxxxxx8,(+91)xxxxxxxxx5</p>
+            <p>Indian Institute of Technology Guwahati, <br> Guwahati - 781039, <br> Assam, India</p>
+        </div>
+        <div class="BOX2">
+            <h3>Company</h3>
+            <ul>
+                <li>
+                    <a href="#" target="blank">About</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Career</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Logistics</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Privacy/Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="BOX3">
+            <h3>Contact</h3>
+            <ul>
+                <li>
+                    <a href="#" target="blank">Help/FAQ</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Press</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Affilates</a>
+                </li>
+            </ul>
+        </div>
+        <div class="BOX4">
+            <h3>More</h3>
+            <ul>
+                <li>
+                    <a href="#" target="blank">Press Centre</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Our Blog</a>
+                </li>
+                <li>
+                    <a href="#" target="blank">Low fare tips</a>
+                </li>
+            </ul>
+        </div>
+        <div class="BOX5"><p>Copyright &copy;2023|All rights reserved</p></div>
+        <div class="BOX6"><a href="#" target="blank">Terms & Conditions</a></div>
+        
+    </footer>
+</body>
+
+</html>
