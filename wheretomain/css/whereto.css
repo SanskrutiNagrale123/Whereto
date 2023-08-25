@@ -225,6 +225,7 @@
   background-color: black;
   top: 20px;
   height: 450px;
+  overflow-x:hidden;
 
 }
 
