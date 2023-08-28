@@ -554,6 +554,9 @@
   left: -128px;
 
 }
+.minicontainer button:hover{
+  cursor: pointer;
+}
 
 .minicontainer input {
   width: 360px;
