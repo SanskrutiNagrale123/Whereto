@@ -342,17 +342,18 @@
   color: white;
 
 }
-
 #plan2 {
+  background: url(../img/sunburn.jpg)no-repeat center center/cover;
+  color: white;
+}
+
+#plan3 {
   color: white;
   background: url(../img/manali-2035750_1280.jpg) no-repeat center center/cover;
 
 }
 
-#plan3 {
-  background: url(../img/mussoorie-7243347_1280.jpg)no-repeat center center/cover;
-  color: white;
-}
+
 
 #plan4 {
   background: url(../img/satyajit-bhowmik-bbvG6f8V1Zc-unsplash.jpg)no-repeat center center/cover;
@@ -366,6 +367,10 @@
 
 #plan6 {
   background: url(../img/sunset-1139293_1280.jpg)no-repeat center center/cover;
+  color: white;
+}
+#plan7 {
+  background: url(../img/mussoorie-7243347_1280.jpg)no-repeat center center/cover;
   color: white;
 }
 
